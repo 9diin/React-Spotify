@@ -44,7 +44,7 @@ function App() {
                     <button className="py-2 px-6 text-sm font-semibold bg-white rounded-2xl cursor-pointer">로그인 하기</button>
                 </div>
             </header>
-            <main className="w-full h-full flex items-center gap-3">
+            <main className="w-full h-[calc(100%-144px)] flex items-center gap-3">
                 <div className="w-[30%] h-full flex flex-col p-4 gap-6 bg-neutral-500/25 rounded-lg">
                     <div className="flex items-center justify-between">
                         <span className="text-white font-semibold">내 라이브러리</span>
@@ -68,7 +68,7 @@ function App() {
                             <button className="w-fit bg-white py-2 px-4 rounded-2xl text-sm font-bold">플레이리스트 만들기</button>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 mt-12">
+                    <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-4">
                             <a href="" className="text-neutral-500 text-sm">
                                 법률 정보
@@ -97,7 +97,7 @@ function App() {
                         <span className="text-white">한국어</span>
                     </div>
                 </div>
-                <div className="flex flex-col w-[70%] h-full p-6 gap-12 bg-neutral-500/25 rounded-lg">
+                <div className="flex flex-col w-[70%] h-full p-6 gap-12 bg-neutral-500/25 rounded-lg overflow-y-scroll">
                     {/* 인기 상승 곡 */}
                     <div className="w-full flex flex-col gap-2">
                         <div className="w-full flex items-end justify-between">
@@ -230,6 +230,13 @@ function App() {
                     </div>
                 </div>
             </main>
+            <footer className="w-full flex items-center justify-between py-4 px-6 bg-gradient-to-r from-purple-600 to-blue-500">
+                <div className="flex flex-col gap-1">
+                    <span className="text-white">Spotify 미리 듣기</span>
+                    <span className="text-white">가끔 표시되는 광고와 함께 무제한 곡 및 팟케스트를 이용하려면 가입하세요. 신용카드는 필요 없습니다.</span>
+                </div>
+                <button className="bg-white px-8 py-3 rounded-3xl font-semibold">무료로 가입하기</button>
+            </footer>
         </div>
     );
 }
