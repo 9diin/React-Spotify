@@ -1,4 +1,5 @@
 import { Archive, ArrowDownToLine, Globe, Home, Plus, Search } from "lucide-react";
+import { Skeleton } from "./components/ui/skeleton";
 
 function App() {
     return (
@@ -96,7 +97,138 @@ function App() {
                         <span className="text-white">한국어</span>
                     </div>
                 </div>
-                <div className="w-[70%] h-full bg-amber-400"></div>
+                <div className="flex flex-col w-[70%] h-full p-6 gap-12 bg-neutral-500/25 rounded-lg">
+                    {/* 인기 상승 곡 */}
+                    <div className="w-full flex flex-col gap-2">
+                        <div className="w-full flex items-end justify-between">
+                            <h2 className="text-2xl font-bold text-white">인기 상승 곡</h2>
+                            <button className="text-neutral-500">모두 표시</button>
+                        </div>
+                        <div className="w-full flex items-center gap-4 overflow-x-scroll">
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <div className="flex flex-col gap-2">
+                                        <Skeleton className="w-32 h-3" />
+                                        <Skeleton className="w-24 h-3" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* 인기 아티스트 */}
+                    <div className="w-full flex flex-col gap-2">
+                        <div className="w-full flex items-end justify-between">
+                            <h2 className="text-2xl font-bold text-white">인기 아티스트</h2>
+                            <button className="text-neutral-500">모두 표시</button>
+                        </div>
+                        <div className="w-full flex items-center gap-4 overflow-x-scroll">
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40 rounded-full" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <Skeleton className="w-32 h-3" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40 rounded-full" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <Skeleton className="w-32 h-3" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40 rounded-full" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <Skeleton className="w-32 h-3" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40 rounded-full" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <Skeleton className="w-32 h-3" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40 rounded-full" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <Skeleton className="w-32 h-3" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <Skeleton className="w-40 h-40 rounded-full" />
+                                <div className="flex flex-col gap-3">
+                                    <Skeleton className="w-40 h-4" />
+                                    <Skeleton className="w-32 h-3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     );
